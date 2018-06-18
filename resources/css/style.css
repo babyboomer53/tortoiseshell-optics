@@ -85,3 +85,33 @@ header nav a {
 .featured-service h1 {
     margin: 0;
 }
+
+#philosophy-appointments {
+    margin-top: 3rem;
+}
+
+.philosophy {
+    margin-right: 5%;
+}
+
+.column-heading {
+    display: flex;
+    color: White;
+    background-color: cadetblue;
+    width: 10rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.column-heading h2 {
+    margin-left: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    color: Lightblue;
+    background-color: azure;
+    align-items: center;
+    height: 8rem;
+    margin-top: 6rem !Important;
+}
