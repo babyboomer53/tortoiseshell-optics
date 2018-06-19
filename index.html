@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Tortoiseshell Optics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css" />-->
@@ -13,27 +13,30 @@
 
 <body>
 
-    <img src="resources/images/glasses-bg.png" alt="Tortoiseshell Optics" Style="max-width:100%">
+    <section style="position: relative;">
 
-    <header id="page-heading" class="site-container" style="position: absolute; top: 0; right: 0; left: 0;">
+        <img id="top-of-page" src="resources/images/glasses-bg.png" alt="Tortoiseshell Optics" Style="max-width:100%; z-index: -1;" />
 
-        <div class="logotype">
-            <img src="./resources/images/logo-white.png" alt="Tortoiseshell logo"> Tortoiseshell Optics
-        </div>
+        <header id="page-heading" class="site-container" style="position: absolute; top: 0; right: 0; left: 0;">
 
-        <nav>
-            <a href="#" target="_blank">Services</a>
-            <a href="#" target="_blank">Products</a>
-            <a href="#" target="_blank">Contact</a>
-        </nav>
+            <div class="logotype">
+                <img src="./resources/images/logo-white.png" alt="Tortoiseshell logo"> Tortoiseshell Optics
+            </div>
 
-        <div class="slogan">
+            <nav>
+                <a href="#products-and-services" target="_blank">Services</a>
+                <a href="#" target="_blank">Products</a>
+                <a href="#bottom" target="_blank" class="scroll">Contact</a>
+            </nav>
+
+        </header>
+
+        <div class="slogan" style="z-index: 0;">
             <h2>DON'T JUST LOOK.., SEE!</h2>
         </div>
+    </section>
 
-    </header>
-
-    <section id="featured-services" class="site-container">
+    <section id="products-and-services" class="site-container">
 
         <h1 style="display: none;">Featured services</h1>
 
@@ -85,9 +88,14 @@
 
     </section>
 
-    <footer class="site-container">
-        <h2>&copy; Tortoiseshell Optics 2018</h2>
+    <footer id="bottom" class="site-container">
+        <img src="resources/images/logo-black.png" alt="Tortoiseshell optics" height="27" style="margin-left: 4rem;" />
+        <a href="#top-of-page" class="scroll">&copy; Tortoiseshell Optics 2018</a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="./resources/scripts/scroll.js"></script>
 
 </body>
 

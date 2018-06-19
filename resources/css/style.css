@@ -3,7 +3,6 @@ html {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.4;
-
 }
 
 * {
@@ -19,7 +18,7 @@ html {
 
 #page-heading {
     height: 3rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     justify-content: space-between;
     color: white;
     background-color: cadetblue;
@@ -53,14 +52,20 @@ header nav a {
     color: black;
     background-color: White;
     width: 36rem;
-    margin-top: 15rem;
+    top: 15rem;
     position: absolute;
-    left: 20rem;
+    left: 45rem;
 }
 
 .slogan h2 {
     font-size: 2rem;
     padding: 0 5rem;
+}
+
+#products-and-services {
+    color: cadetblue;
+    justify-content: space-around;
+    margin-top: 3rem;
 }
 
 .featured-service {
@@ -69,14 +74,8 @@ header nav a {
     align-items: center;
 }
 
-#featured-services {
-    color: cadetblue;
-    justify-content: space-around;
-    margin-top: 3rem;
-}
-
 .featured-service .image-container {
-    height: 9rem;
+    min-height: 9.2rem;
     justify-content: center;
 }
 
@@ -98,7 +97,7 @@ header nav a {
     display: flex;
     color: White;
     background-color: cadetblue;
-    width: 10rem;
+    width: 15rem;
     height: 3rem;
     align-items: center;
 }
@@ -114,4 +113,21 @@ footer {
     align-items: center;
     height: 8rem;
     margin-top: 6rem !Important;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: inherit;
+    margin-left: 1.0rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
