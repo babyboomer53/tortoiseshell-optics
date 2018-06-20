@@ -3,21 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tortoiseshell Optics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css" />-->
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css" />
-    <script src="main.js"></script>
+    <style>
+        /* The sticky class is added to the navbar by JS when it reaches its scroll position */
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 25%; /* Keep the navigation bar centered. */
+            opacity: 0.75;
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <section style="position: relative;">
+    <section id="banner" style="position: relative;">
 
-        <img id="top-of-page" src="resources/images/glasses-bg.png" alt="Tortoiseshell Optics" Style="max-width:100%; z-index: -1;" />
-
-        <header id="page-heading" class="site-container" style="position: absolute; top: 0; right: 0; left: 0;">
+        <div id="navbar" class="navigation-bar site-container">
 
             <div class="logotype">
                 <img src="./resources/images/logo-white.png" alt="Tortoiseshell logo"> Tortoiseshell Optics
@@ -29,11 +43,14 @@
                 <a href="#bottom" target="_blank" class="scroll">Contact</a>
             </nav>
 
-        </header>
-
-        <div class="slogan" style="z-index: 0;">
-            <h2>DON'T JUST LOOK.., SEE!</h2>
         </div>
+
+        <div class="site-container">
+            <div class="slogan site-container" style="z-index: 1;">
+                <h2>DON'T JUST LOOK.., SEE!</h2>
+            </div>
+        </div>
+
     </section>
 
     <section id="products-and-services" class="site-container">
@@ -66,7 +83,7 @@
 
     </section>
 
-    <section id="philosophy-appointments" class="site-container">
+    <section id="philosophy-and-appointments" class="site-container">
 
         <div class="philosophy">
             <div class="column-heading">
@@ -90,12 +107,33 @@
 
     <footer id="bottom" class="site-container">
         <img src="resources/images/logo-black.png" alt="Tortoiseshell optics" height="27" style="margin-left: 4rem;" />
-        <a href="#top-of-page" class="scroll">&copy; Tortoiseshell Optics 2018</a>
+        <a href="#banner" class="scroll">&copy; Tortoiseshell Optics 2018</a>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="./resources/scripts/scroll.js"></script>
+    <script>
+        // The following code was obtained from: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 
