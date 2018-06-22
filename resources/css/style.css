@@ -5,9 +5,11 @@ html {
     line-height: 1.4;
 }
 
+/*
 * {
     border: 2px solid black;
 }
+*/
 
 .site-container {
     display: flex;
@@ -82,6 +84,16 @@ html {
 .slogan h2 {
     font-size: 2rem;
     padding: 0 5rem;
+    -moz-animation: FadeIn 6s;
+}
+
+@-moz-keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #products-and-services {
@@ -109,6 +121,10 @@ html {
     margin-top: 3rem;
 }
 
+#philosophy-and-appointments p {
+    color: cadetblue;
+}
+
 .philosophy {
     margin-right: 5%;
 }
@@ -116,7 +132,7 @@ html {
 .column-heading {
     display: flex;
     color: White;
-    background-color: cadetblue;
+    background-color: Crimson;
     width: 15rem;
     height: 3rem;
     align-items: center;
@@ -129,7 +145,7 @@ html {
 
 footer {
     color: Lightblue;
-    background-color: azure;
+    background-color: Black;
     align-items: center;
     height: 8rem;
     margin-top: 6rem !Important;
