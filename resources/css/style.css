@@ -4,11 +4,11 @@ html {
     font-weight: bold;
     line-height: 1.4;
 }
-
+/*
 * {
     border: 2px solid black;
 }
-
+*/
 .site-container {
     display: flex;
     width: 960px;
@@ -58,8 +58,9 @@ html {
     margin-right: 2rem;
 }
 
-.slogan {
+.exhortation {
     position: absolute;
+    padding: 1.5rem 0;
     color: black;
     background-color: White;
     width: 36rem;
@@ -67,7 +68,7 @@ html {
     top: 10rem;
 }
 
-.slogan h2 {
+.exhortation h2 {
     font-size: 2rem;
     padding: 0 5rem;
 }
@@ -128,4 +129,120 @@ footer a {
     font-size: 1rem;
     color: inherit;
     margin-left: 1.0rem;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    font-family: Arial;
+    font-size: 2rem;
+    color: #000;
+    font-weight: Bold;
+    opacity: 0;
+    animation:1s ease 3s normal forwards 1 animate;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+ul li:nth-child(1) {
+    /*D*/
+    animation-delay: 1000ms
+}
+
+ul li:nth-child(2) {
+    /*O*/
+    animation-delay: 1100ms
+}
+
+ul li:nth-child(3) {
+    /*N*/
+    animation-delay: 1200ms
+}
+
+ul li:nth-child(4) {
+    /*'*/
+    animation-delay: 1300ms
+}
+
+ul li:nth-child(5) {
+    /*T*/
+    margin-right: 0.75rem;
+    animation-delay: 1400ms
+}
+
+ul li:nth-child(6) {
+    /*J*/
+    animation-delay: 1500ms
+}
+
+ul li:nth-child(7) {
+    /*U*/
+    animation-delay: 1600ms
+}
+
+ul li:nth-child(8) {
+    /*S*/
+    animation-delay: 1700ms
+}
+
+ul li:nth-child(9) {
+    /*T*/
+    margin-right: 0.75rem;
+    animation-delay: 1800ms
+}
+
+ul li:nth-child(10) {
+    /*L*/
+    margin: 0;
+    animation-delay: 1900ms;
+}
+
+ul li:nth-child(11) {
+    /*O*/
+    margin: 0;
+    animation-delay: 2000ms;
+}
+
+ul li:nth-child(12) {
+    /*O*/
+    margin: 0;
+    animation-delay: 2100ms
+}
+
+ul li:nth-child(13) {
+    /*K*/
+    animation-delay: 2200ms;
+}
+
+ul li:nth-child(14) {
+    /*Period*/
+    margin: 0;
+    animation-delay: 2400ms;
+}
+
+ul li:nth-child(15) {
+    /*Period*/
+    margin: 0;
+    animation-delay: 2600ms
+}
+
+ul li:nth-child(16) {
+    /*Comma*/
+    margin-right: 0.75rem;
+    animation-delay: 2800ms;
+}
+
+ul li:nth-child(17) {
+    /*SEE*/
+    font-style: italic;
+    animation-delay: 3300ms;
+    animation:1s ease 4s normal forwards 1 animate;
 }
