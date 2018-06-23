@@ -37,6 +37,16 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation:1s ease 3s normal forwards 1 animate_filter;
+}
+
+@keyframes animate_filter {
+    from {
+        filter: blur(5px)
+    }
+    to {
+        filter: blur(0px)
+    }
 }
 
 .navigation-bar {
@@ -84,10 +94,10 @@ html {
 .slogan h2 {
     font-size: 2rem;
     padding: 0 5rem;
-    -moz-animation: FadeIn 6s;
+    animation: FadeIn 6s;
 }
 
-@-moz-keyframes FadeIn {
+@keyframes FadeIn {
     from {
         opacity: 0;
     }
