@@ -4,11 +4,11 @@ html {
     font-weight: bold;
     line-height: 1.4;
 }
-/*
+
 * {
     border: 2px solid black;
 }
-*/
+
 .site-container {
     display: flex;
     width: 960px;
