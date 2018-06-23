@@ -4,11 +4,11 @@ html {
     font-weight: bold;
     line-height: 1.4;
 }
-
+/*
 * {
     border: 2px solid black;
 }
-
+*/
 .site-container {
     display: flex;
     width: 960px;
@@ -60,6 +60,7 @@ html {
 
 .slogan {
     position: absolute;
+    padding: 1.5rem 0;
     color: black;
     background-color: White;
     width: 36rem;
@@ -128,4 +129,65 @@ footer a {
     font-size: 1rem;
     color: inherit;
     margin-left: 1.0rem;
+}
+
+ul li {
+    margin-right: 0.75rem;
+    list-style: none;
+    float: left;
+    font-family: Arial;
+    font-size: 2rem;
+    color: #000;
+    font-weight: Normal;
+    opacity: 0;
+    animation:1s ease 3s normal forwards 1 animate;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ul li:nth-child(1) {
+    /*Don't*/
+    animation-delay: 1000ms
+}
+
+ul li:nth-child(2) {
+    /*Just*/
+    animation-delay: 1500ms
+}
+
+ul li:nth-child(3) {
+    /*Look*/
+    margin: 0;
+    animation-delay: 2000ms;
+}
+
+ul li:nth-child(4) {
+    /*Period*/
+    margin: 0;
+    animation-delay: 2250ms;
+}
+
+ul li:nth-child(5) {
+    /*Period*/
+    margin: 0;
+    animation-delay: 2500ms
+}
+
+ul li:nth-child(6) {
+    /*Comma*/
+    animation-delay: 2750ms;
+}
+
+ul li:nth-child(7) {
+    /*See*/
+    font-weight: bold;
+    font-style: italic;
+    animation-delay: 3750ms;
 }
