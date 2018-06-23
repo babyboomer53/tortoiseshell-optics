@@ -139,10 +139,10 @@ ul li {
     color: #000;
     font-weight: Bold;
     opacity: 0;
-    animation:1s ease 3s normal forwards 1 animate;
+    animation:1s ease 3s normal forwards 1 animate_text;
 }
 
-@keyframes animate {
+@keyframes animate_text {
     0% {
         opacity: 0;
     }
@@ -244,5 +244,5 @@ ul li:nth-child(17) {
     /*SEE*/
     font-style: italic;
     animation-delay: 3300ms;
-    animation:1s ease 4s normal forwards 1 animate;
+    animation:1s ease 4s normal forwards 1 animate_text;
 }
