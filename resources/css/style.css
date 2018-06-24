@@ -35,13 +35,13 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation-delay: 3400ms;
-    animation:1s ease 4.5s normal forwards 1 animate_filter;
+    animation-delay: 3200ms;
+    animation:1s ease 5s normal forwards 1 animate_filter;
 }
 
 @keyframes animate_filter {
     from {
-        filter: blur(6px)
+        filter: blur(8px)
     }
     to {
         filter: blur(0px)
@@ -83,20 +83,20 @@ html {
 
 .exhortation {
     position: absolute;
-    padding: 1.5rem 0;
-    color: black;
+    padding: 2rem 0;
+    color: Crimson;
     background-color: White;
     width: 36rem;
     left: 19.5rem;
     top: 10rem;
 }
-
+/*
 .exhortation h2 {
     font-size: 2rem;
     padding: 0 5rem;
     animation: FadeIn 6s;
 }
-
+*/
 #products-and-services {
     color: cadetblue;
     justify-content: space-around;
@@ -116,6 +116,7 @@ html {
 
 .featured-service h1 {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 #philosophy-and-appointments {
@@ -123,6 +124,7 @@ html {
 }
 
 #philosophy-and-appointments p {
+    margin-top: 1.5rem;
     color: cadetblue;
 }
 
@@ -164,7 +166,7 @@ ul li {
     float: left;
     font-family: Arial;
     font-size: 2rem;
-    color: #000;
+    color: Black;
     font-weight: Bold;
     opacity: 0;
     animation:1s ease 3s normal forwards 1 animate_text;
@@ -182,6 +184,7 @@ ul li {
 
 ul li:nth-child(1) {
     /*D*/
+    padding-left: 5rem;
     animation-delay: 1000ms
 }
 
@@ -271,6 +274,6 @@ ul li:nth-child(16) {
 ul li:nth-child(17) {
     /*SEE*/
     font-style: italic;
-    animation-delay: 300ms;
+    animation-delay: 3000ms;
     animation:1s ease 4s normal forwards 1 animate_text;
 }
