@@ -35,8 +35,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation-delay: 3200ms;
-    animation:1000ms ease 5000ms normal forwards 1 animate_filter;
+    animation: 3200ms ease 5000ms normal forwards 1 animate_filter;
 }
 
 @keyframes animate_filter {
@@ -90,13 +89,7 @@ html {
     left: 19.5rem;
     top: 10rem;
 }
-/*
-.exhortation h2 {
-    font-size: 2rem;
-    padding: 0 5rem;
-    animation: FadeIn 6s;
-}
-*/
+
 #products-and-services {
     color: cadetblue;
     justify-content: space-around;
@@ -274,6 +267,5 @@ ul li:nth-child(16) {
 ul li:nth-child(17) {
     /*SEE*/
     font-style: italic;
-    animation-delay: 3000ms;
-    animation:1000ms ease 4000ms normal forwards 1 animate_text;
+    animation: 3000ms ease 4000ms normal forwards 1 animate_text;
 }
