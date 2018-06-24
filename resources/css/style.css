@@ -30,7 +30,7 @@ html {
     right: 0;
     bottom: 0;
     z-index: -1;
-    filter: blur(6px);
+    filter: blur(8px);
     background-image: url("../../resources/images/glasses-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
