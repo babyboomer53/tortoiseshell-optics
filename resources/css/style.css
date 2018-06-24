@@ -4,11 +4,11 @@ html {
     font-weight: bold;
     line-height: 1.4;
 }
-/*
+
 * {
     border: 2px solid black;
 }
-*/
+
 .site-container {
     display: flex;
     width: 960px;
@@ -30,17 +30,18 @@ html {
     right: 0;
     bottom: 0;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(6px);
     background-image: url("../../resources/images/glasses-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation:1s ease 3s normal forwards 1 animate_filter;
+    animation-delay: 3400ms;
+    animation:1s ease 4.5s normal forwards 1 animate_filter;
 }
 
 @keyframes animate_filter {
     from {
-        filter: blur(5px)
+        filter: blur(6px)
     }
     to {
         filter: blur(0px)
@@ -94,15 +95,6 @@ html {
     font-size: 2rem;
     padding: 0 5rem;
     animation: FadeIn 6s;
-}
-
-@keyframes FadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 #products-and-services {
@@ -261,24 +253,24 @@ ul li:nth-child(13) {
 ul li:nth-child(14) {
     /*Period*/
     margin: 0;
-    animation-delay: 2400ms;
+    animation-delay: 2300ms;
 }
 
 ul li:nth-child(15) {
     /*Period*/
     margin: 0;
-    animation-delay: 2600ms
+    animation-delay: 2500ms
 }
 
 ul li:nth-child(16) {
     /*Comma*/
     margin-right: 0.75rem;
-    animation-delay: 2800ms;
+    animation-delay: 2700ms;
 }
 
 ul li:nth-child(17) {
     /*SEE*/
     font-style: italic;
-    animation-delay: 3300ms;
+    animation-delay: 300ms;
     animation:1s ease 4s normal forwards 1 animate_text;
 }
