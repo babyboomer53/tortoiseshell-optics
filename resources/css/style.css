@@ -36,7 +36,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     animation-delay: 3200ms;
-    animation:1s ease 5s normal forwards 1 animate_filter;
+    animation:1000ms ease 5000ms normal forwards 1 animate_filter;
 }
 
 @keyframes animate_filter {
@@ -169,7 +169,7 @@ ul li {
     color: Black;
     font-weight: Bold;
     opacity: 0;
-    animation:1s ease 3s normal forwards 1 animate_text;
+    animation:1000ms ease 3000ms normal forwards 1 animate_text;
 }
 
 @keyframes animate_text {
@@ -275,5 +275,5 @@ ul li:nth-child(17) {
     /*SEE*/
     font-style: italic;
     animation-delay: 3000ms;
-    animation:1s ease 4s normal forwards 1 animate_text;
+    animation:1000ms ease 4000ms normal forwards 1 animate_text;
 }
