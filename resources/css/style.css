@@ -35,7 +35,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation: 3200ms ease 5000ms normal forwards 1 animate_filter;
+    animation: 3000ms ease 4500ms normal forwards 1 animate_filter;
 }
 
 @keyframes animate_filter {
@@ -83,11 +83,17 @@ html {
 .exhortation {
     position: absolute;
     padding: 2rem 0;
-    color: Crimson;
     background-color: White;
-    width: 36rem;
+    width: 0rem;
+    /*height: auto;*/
     left: 19.5rem;
     top: 10rem;
+    animation: 2000ms ease 0ms normal forwards 1 explode;
+}
+
+@keyframes explode {
+    from {width: 0; height: 0;}
+    to {width: 36rem; height: 2.10rem;}
 }
 
 #products-and-services {
@@ -225,19 +231,16 @@ ul li:nth-child(9) {
 
 ul li:nth-child(10) {
     /*L*/
-    margin: 0;
     animation-delay: 1900ms;
 }
 
 ul li:nth-child(11) {
     /*O*/
-    margin: 0;
     animation-delay: 2000ms;
 }
 
 ul li:nth-child(12) {
     /*O*/
-    margin: 0;
     animation-delay: 2100ms
 }
 
@@ -248,13 +251,11 @@ ul li:nth-child(13) {
 
 ul li:nth-child(14) {
     /*Period*/
-    margin: 0;
     animation-delay: 2300ms;
 }
 
 ul li:nth-child(15) {
     /*Period*/
-    margin: 0;
     animation-delay: 2500ms
 }
 
