@@ -1,0 +1,348 @@
+html {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+* {
+    border: 2px solid black;
+}
+
+.site-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+    height: 30rem;
+}
+
+#banner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    background-image: url("../../resources/images/glasses-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: 3000ms ease 4500ms normal forwards 1 animate_filter;
+    animation: 3000ms ease 4500ms normal forwards 1 animate_filter;
+}
+
+@-webkit-keyframes animate_filter {
+    from {
+        -webkit-filter: blur(8px);
+        filter: blur(8px)
+    }
+    to {
+        -webkit-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+@keyframes animate_filter {
+    from {
+        -webkit-filter: blur(8px);
+        filter: blur(8px)
+    }
+    to {
+        -webkit-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+.navigation-bar {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 3rem;
+    color: white;
+    background-color: cadetblue;
+    top: 1rem;
+    z-index: 500;
+}
+
+.logotype {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logotype img {
+    height: 1.5rem;
+    margin-right: 1rem;
+    float: left;
+}
+
+.navigation-bar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#banner .navigation-bar nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.exhortation {
+    position: absolute;
+    padding: 2rem 0;
+    background-color: White;
+    width: 0rem;
+    /*height: auto;*/
+    left: 19.5rem;
+    top: 10rem;
+    -webkit-animation: 2000ms ease 0ms normal forwards 1 explode;
+    animation: 2000ms ease 0ms normal forwards 1 explode;
+}
+
+@-webkit-keyframes explode {
+    from {width: 0; height: 0;}
+    to {width: 36rem; height: 2.10rem;}
+}
+
+@keyframes explode {
+    from {width: 0; height: 0;}
+    to {width: 36rem; height: 2.10rem;}
+}
+
+#products-and-services {
+    color: cadetblue;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.featured-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.featured-service .image-container {
+    min-height: 9.2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.featured-service h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#philosophy-and-appointments {
+    margin-top: 3rem;
+}
+
+#philosophy-and-appointments p {
+    margin-top: 1.5rem;
+    color: cadetblue;
+}
+
+.philosophy {
+    margin-right: 5%;
+}
+
+.column-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: White;
+    background-color: Crimson;
+    width: 15rem;
+    height: 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.column-heading h2 {
+    margin-left: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    color: Lightblue;
+    background-color: Black;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 8rem;
+    margin-top: 6rem !Important;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: inherit;
+    margin-left: 1.0rem;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    font-family: Arial;
+    font-size: 2rem;
+    color: Black;
+    font-weight: Bold;
+    opacity: 0;
+    -webkit-animation:1000ms ease 3000ms normal forwards 1 animate_text;
+    animation:1000ms ease 3000ms normal forwards 1 animate_text;
+}
+
+@-webkit-keyframes animate_text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate_text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+ul li:nth-child(1) {
+    /*D*/
+    padding-left: 5rem;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms
+}
+
+ul li:nth-child(2) {
+    /*O*/
+    -webkit-animation-delay: 1100ms;
+    animation-delay: 1100ms
+}
+
+ul li:nth-child(3) {
+    /*N*/
+    -webkit-animation-delay: 1200ms;
+    animation-delay: 1200ms
+}
+
+ul li:nth-child(4) {
+    /*'*/
+    -webkit-animation-delay: 1300ms;
+    animation-delay: 1300ms
+}
+
+ul li:nth-child(5) {
+    /*T*/
+    margin-right: 0.75rem;
+    -webkit-animation-delay: 1400ms;
+    animation-delay: 1400ms
+}
+
+ul li:nth-child(6) {
+    /*J*/
+    -webkit-animation-delay: 1500ms;
+    animation-delay: 1500ms
+}
+
+ul li:nth-child(7) {
+    /*U*/
+    -webkit-animation-delay: 1600ms;
+    animation-delay: 1600ms
+}
+
+ul li:nth-child(8) {
+    /*S*/
+    -webkit-animation-delay: 1700ms;
+    animation-delay: 1700ms
+}
+
+ul li:nth-child(9) {
+    /*T*/
+    margin-right: 0.75rem;
+    -webkit-animation-delay: 1800ms;
+    animation-delay: 1800ms
+}
+
+ul li:nth-child(10) {
+    /*L*/
+    -webkit-animation-delay: 1900ms;
+    animation-delay: 1900ms;
+}
+
+ul li:nth-child(11) {
+    /*O*/
+    -webkit-animation-delay: 2000ms;
+    animation-delay: 2000ms;
+}
+
+ul li:nth-child(12) {
+    /*O*/
+    -webkit-animation-delay: 2100ms;
+    animation-delay: 2100ms
+}
+
+ul li:nth-child(13) {
+    /*K*/
+    -webkit-animation-delay: 2200ms;
+    animation-delay: 2200ms;
+}
+
+ul li:nth-child(14) {
+    /*Period*/
+    -webkit-animation-delay: 2300ms;
+    animation-delay: 2300ms;
+}
+
+ul li:nth-child(15) {
+    /*Period*/
+    -webkit-animation-delay: 2500ms;
+    animation-delay: 2500ms
+}
+
+ul li:nth-child(16) {
+    /*Comma*/
+    margin-right: 0.75rem;
+    -webkit-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+}
+
+ul li:nth-child(17) {
+    /*SEE*/
+    font-style: italic;
+    -webkit-animation: 3000ms ease 4000ms normal forwards 1 animate_text;
+    animation: 3000ms ease 4000ms normal forwards 1 animate_text;
+}
